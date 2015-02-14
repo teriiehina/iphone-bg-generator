@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>iPhone Background Generator</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+	<script src="script.js"></script>
+</head>
+
+
+<body>
+  
+  <div class="container">
+    
+    <div class="row">
+      <h1>iPhone Background Generator</h1>
+    </div>
+    
+    <div class="row">
+      <div class="six columns">
+        <label for="size-selector">Size</label>
+        <select name="size-selector" id="size-selector">
+          <option value="0">iPhone 3GS</option>
+          <option value="1">iPhone 4/4S</option>
+          <option value="2">iPhone 5/5C/5S</option>
+          <option value="3">iPhone 6</option>
+          <option value="4">iPhone 6 Plus</option>
+        </select>
+    
+        <label for="bg_color">Background</label>
+        <input type="text" name="bg_color" id="bg_color" value="#000000" size="8">
+
+        <label for="drop_files">Image</label>
+    		<div name="drop_files" id="drop_files">
+    			Drop a .png file here
+    		</div>
+        
+        <br>
+    
+        <label for="image_center_X">center.x in %</label>
+        <input type="text" name="image_center_X" id="image_center_X" size="4" value="50"></br>
+    
+        <label for="image_center_Y">center.y in %</label>
+        <input type="text" name="image_center_Y" id="image_center_Y" size="4" value="50"></br>
+    
+        <label for="image_width">image.width in %</label>
+        <input type="text" name="image_width" id="image_width" size="4" value="100"></br>
+    
+        <input type="button" value="Download" id="generatePNG">
+      </div>
+      
+      <div class="six columns" id="preview">
+        <canvas id="canvas"></canvas>
+      </div>
+      
+	  </div>
+  </div>
+  
+  
+</body>
+</html>

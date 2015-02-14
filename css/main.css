@@ -1,0 +1,35 @@
+body
+{
+  background: #EEE;
+}
+
+
+/*.container
+{
+  width:      20%;
+  min-width:  200px;
+  margin:     0 auto;
+  padding:    1em;
+
+  background: #E00;
+  float:left;
+}*/
+
+#drop_files 
+{
+	border: 5px dashed #999;
+	border-radius: 10px;
+	padding: 2em 1em;
+	text-align: center;
+  width: 200px;
+}
+
+.over {
+	background: #F7F7F7;
+}
+
+/*#preview
+{
+  background: #0E0;
+}*/
+
